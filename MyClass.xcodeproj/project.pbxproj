@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A1249E418D65DCF7F97229D /* Pods_MyClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BBBEEDF8D3EE25545735D /* Pods_MyClass.framework */; };
+		3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */; };
 		4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */; };
 		4C5C842B1F6BBB6B003BCBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */; };
 		4C5C842E1F6BBB6B003BCBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C842C1F6BBB6B003BCBF8 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C5C84201F6BBB6B003BCBF8 /* MyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */,
 				4CACFD221F6BBC1A0081062A /* Main.storyboard */,
+				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
 				4CACFD261F6BBE7E0081062A /* LoginViewController.swift */,
 				4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */,
 				4C5C842C1F6BBB6B003BCBF8 /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */,
 				4CACFD271F6BBE7E0081062A /* LoginViewController.swift in Sources */,
 				4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */,
 			);
