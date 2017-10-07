@@ -1,15 +1,14 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  MyClass
 //
-//  Created by Radeth Chhay on 9/15/17.
+//  Created by Mac on 10/7/17.
 //  Copyright © 2017 Radeth Chhay. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class LoginViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
