@@ -16,13 +16,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
        self.view.backgroundColor = UIColor(red: 0.00, green: 0.63, blue: 0.42, alpha: 1.0)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     @IBAction func onLoginBottonPressed(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {

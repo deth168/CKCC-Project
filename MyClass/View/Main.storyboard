@@ -22,14 +22,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QN-VN-It5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QN-VN-It5">
                                 <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f6T-hv-646"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfC-6C-gtd">
                                 <rect key="frame" x="16" y="352" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xe4-8d-NRh"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -93,7 +99,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="7QN-VN-It5" id="fBr-UF-H7X"/>
                         <outlet property="passwordTextField" destination="mfC-6C-gtd" id="frg-uS-2ci"/>
-                        <outlet property="userNameTextField" destination="7QN-VN-It5" id="aYC-fI-N57"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KN6-fr-aJi">
-                                <rect key="frame" x="117.5" y="318.5" width="140" height="30"/>
+                                <rect key="frame" x="118" y="319" width="140" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="zba-fV-lkb"/>
                                 </constraints>
@@ -125,9 +130,8 @@
                                 <rect key="frame" x="172" y="361" width="30" height="30"/>
                                 <state key="normal" title="Join"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyV-GT-Ovl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyV-GT-Ovl">
                                 <rect key="frame" x="133" y="526" width="109" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create a course"/>
                                 <connections>
                                     <segue destination="JrA-SS-EkO" kind="show" id="yPa-zT-0De"/>
@@ -136,11 +140,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QyV-GT-Ovl" firstAttribute="centerX" secondItem="vxz-VE-qSb" secondAttribute="centerX" id="8Xa-S7-9H8"/>
                             <constraint firstItem="rdB-YY-B9d" firstAttribute="top" secondItem="KN6-fr-aJi" secondAttribute="bottom" constant="12.5" id="ABT-42-UbH"/>
                             <constraint firstItem="KN6-fr-aJi" firstAttribute="centerY" secondItem="vxz-VE-qSb" secondAttribute="centerY" id="MBw-At-Pw8"/>
                             <constraint firstItem="KN6-fr-aJi" firstAttribute="centerX" secondItem="vxz-VE-qSb" secondAttribute="centerX" id="Ni8-Ja-6Pi"/>
                             <constraint firstItem="KN6-fr-aJi" firstAttribute="centerX" secondItem="vxz-VE-qSb" secondAttribute="centerX" id="Qdg-rc-whg"/>
                             <constraint firstItem="rdB-YY-B9d" firstAttribute="centerX" secondItem="vxz-VE-qSb" secondAttribute="centerX" id="UNK-O5-2NN"/>
+                            <constraint firstItem="O6T-zV-gs5" firstAttribute="top" secondItem="QyV-GT-Ovl" secondAttribute="bottom" constant="62" id="qeM-rj-uJc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search course" id="DOy-Fp-owu"/>
