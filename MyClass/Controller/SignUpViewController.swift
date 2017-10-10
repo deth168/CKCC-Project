@@ -45,8 +45,8 @@ class SignUpViewController: UIViewController {
         
         func presentLoggedInScreen() {
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let HomeViewController:HomeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            self.present(HomeViewController, animated: true, completion: nil)
+            let NoClassViewController:NoClassViewController = storyboard.instantiateViewController(withIdentifier: "NoClassViewController") as! NoClassViewController
+            self.present(NoClassViewController, animated: true, completion: nil)
         }
 
     }

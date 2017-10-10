@@ -25,17 +25,24 @@ class LoginViewController: UIViewController {
     }
     @IBAction func onLoginBottonPressed(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password, completion: { (User, error) in
-                if let FirebaseError = error {
-                    print(FirebaseError.localizedDescription)
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                
+                if error != nil {
+                    
+                    let alert = UIAlertController(title: "login failed!", message: error?.localizedDescription, preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+
+                    alert.addAction(action)
+                    alert.present(alert, animated: true, completion: nil)
+
+                    //print(FirebaseError.localizedDescription)
+                    print(error.debugDescription)
                     return
                 }
             })
         } else {
-            let alert = UIAlertController(title: "login failed!", message: "email or password is incorrect.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(action)
-            alert.present(alert, animated: true, completion: nil)
+            print("Login success")
+            
         }
     }
     
