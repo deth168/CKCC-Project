@@ -7,7 +7,7 @@ target 'MyClass' do
 
   # Pods for MyClass
 
-  pod ‘Firebase/Core’
-  pod ‘Firebase/Auth’
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end
