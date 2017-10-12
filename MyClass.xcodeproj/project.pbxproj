@@ -20,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		048718D51F88B4A700FE1223 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = ../../../../Downloads/Color.swift; sourceTree = "<group>"; };
 		0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClassViewController.swift; sourceTree = "<group>"; };
 		04DC043E1F88C31400CED28B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		048718D11F88B27000FE1223 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				048718D51F88B4A700FE1223 /* Color.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
