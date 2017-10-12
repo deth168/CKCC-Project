@@ -23,6 +23,7 @@
 /* Begin PBXFileReference section */
 		0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClassViewController.swift; sourceTree = "<group>"; };
 		049EF0F51F8FDB36001660C5 /* CKCC-Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CKCC-Project.xcdatamodel"; sourceTree = "<group>"; };
+		049EF0F71F8FDC2D001660C5 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colors.swift; path = ../../../../Downloads/colors.swift; sourceTree = "<group>"; };
 		04DC043E1F88C31400CED28B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C5C84201F6BBB6B003BCBF8 /* MyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,7 @@
 		048718D11F88B27000FE1223 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				049EF0F71F8FDC2D001660C5 /* colors.swift */,
 				049EF0F41F8FDB36001660C5 /* CKCC-Project.xcdatamodeld */,
 			);
 			path = Model;
