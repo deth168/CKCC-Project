@@ -63,10 +63,9 @@
 		048718D21F88B27800FE1223 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */,
 				4CACFD221F6BBC1A0081062A /* Main.storyboard */,
-				0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */,
 				4C5C842C1F6BBB6B003BCBF8 /* LaunchScreen.storyboard */,
+				4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -74,9 +73,10 @@
 		048718D41F88B28900FE1223 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
 				4CACFD261F6BBE7E0081062A /* LoginViewController.swift */,
+				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
 				04DC043E1F88C31400CED28B /* HomeViewController.swift */,
+				0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,12 +227,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyClass/Pods-MyClass-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
