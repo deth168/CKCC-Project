@@ -14,20 +14,15 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    //FireDatabase
-    var ref: DatabaseReference!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //FireDatabase
-        ref = Database.database().reference()
-        
        self.view.backgroundColor = UIColor(red: 0.00, green: 0.63, blue: 0.42, alpha: 1.0)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         if Auth.auth().currentUser != nil {
             presentHomeScreen()
@@ -64,7 +59,7 @@ class LoginViewController: UIViewController {
                 }
                 else {
                     
-                    let alert = UIAlertController(title: "Login failed.", message: error?.localizedDescription, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Login failed!", message: error?.localizedDescription, preferredStyle: .alert)
                     let action = UIAlertAction(title: "OK", style: .default, handler: nil)
                     
                     alert.addAction(action)

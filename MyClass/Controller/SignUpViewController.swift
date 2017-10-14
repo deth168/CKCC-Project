@@ -8,12 +8,10 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var emailTextFIeld: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmTextField: UITextField!
@@ -33,7 +31,8 @@ class SignUpViewController: UIViewController {
             present(alert, animated: true, completion: nil)
         } else {
             if let email = emailTextFIeld.text, let password = passwordTextField.text {
-                Auth.auth().createUser(withEmail: email, password: password, completion: { (User, error) in
+                Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                
                     if let FirebaseError = error {
                         print(FirebaseError.localizedDescription)
                         return
