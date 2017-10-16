@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0491B6F91F8A5D3F0038FF87 /* NoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */; };
+		049A46221F92878D00FC7A70 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A46211F92878D00FC7A70 /* ClassViewController.swift */; };
+		049A46241F928B1000FC7A70 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */; };
 		049EF0F61F8FDB36001660C5 /* CKCC-Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 049EF0F41F8FDB36001660C5 /* CKCC-Project.xcdatamodeld */; };
+		04D0BF421F93B66800F1567F /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0BF411F93B66700F1567F /* CreateClassViewController.swift */; };
 		04DC043F1F88C31400CED28B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC043E1F88C31400CED28B /* HomeViewController.swift */; };
 		0A1249E418D65DCF7F97229D /* Pods_MyClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BBBEEDF8D3EE25545735D /* Pods_MyClass.framework */; };
 		3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */; };
@@ -22,8 +25,11 @@
 
 /* Begin PBXFileReference section */
 		0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClassViewController.swift; sourceTree = "<group>"; };
+		049A46211F92878D00FC7A70 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		049EF0F51F8FDB36001660C5 /* CKCC-Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CKCC-Project.xcdatamodel"; sourceTree = "<group>"; };
 		049EF0F71F8FDC2D001660C5 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colors.swift; path = ../../../../Downloads/colors.swift; sourceTree = "<group>"; };
+		04D0BF411F93B66700F1567F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		04DC043E1F88C31400CED28B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C5C84201F6BBB6B003BCBF8 /* MyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +83,9 @@
 				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
 				04DC043E1F88C31400CED28B /* HomeViewController.swift */,
 				0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */,
+				049A46211F92878D00FC7A70 /* ClassViewController.swift */,
+				049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */,
+				04D0BF411F93B66700F1567F /* CreateClassViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,12 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049A46221F92878D00FC7A70 /* ClassViewController.swift in Sources */,
 				3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */,
 				049EF0F61F8FDB36001660C5 /* CKCC-Project.xcdatamodeld in Sources */,
 				0491B6F91F8A5D3F0038FF87 /* NoClassViewController.swift in Sources */,
 				4CACFD271F6BBE7E0081062A /* LoginViewController.swift in Sources */,
 				4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */,
 				04DC043F1F88C31400CED28B /* HomeViewController.swift in Sources */,
+				049A46241F928B1000FC7A70 /* SignUpNameViewController.swift in Sources */,
+				04D0BF421F93B66800F1567F /* CreateClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
