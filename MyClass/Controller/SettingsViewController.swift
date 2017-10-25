@@ -1,16 +1,15 @@
 //
-//  HomeViewController.swift
+//  SettingsViewController.swift
 //  MyClass
 //
-//  Created by Mac on 10/7/17.
-//  Copyright © 2017 Radeth Chhay. All rights reserved.
+//  Created by Mac on 10/25/2560 BE.
+//  Copyright © 2560 BE Radeth Chhay. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
-
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +22,14 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onLogOutPressed(_ sender: Any) {
+    @IBAction func onSignOutButtonPressed(_ sender: Any) {
         
         if Auth.auth().currentUser != nil {
             do {
                 
                 try Auth.auth().signOut()
                 
-                let vc = storyboard?.instantiateViewController(withIdentifier: "Login")
+                let vc = storyboard?.instantiateViewController(withIdentifier: "login")
                 present(vc!, animated: true, completion: nil)
                 print("LOGGED OUT")
                 
@@ -39,5 +38,7 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    }
     
-}
+
+

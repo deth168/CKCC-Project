@@ -32,21 +32,18 @@ class CreateClassViewController: UIViewController {
         let classCode = classCodeTextField.text
         
         let ref = Database.database().reference()
-        let key = ref.childByAutoId().key
         
         let classGroup : [String : AnyObject] = [
             "classname" : className as AnyObject,
             "classcode" : classCode as AnyObject
         ]
-        let addGroup = ["classes/\(key)" : classGroup]
-        //let addMemberToClass = ["classes/\(key)"]
-    
-        let userID = Auth.auth().currentUser?.uid
-        ref.child("classes").child(userID!).setValue(["member" : userID])
         
-        ref.updateChildValues(addGroup)
+        let key = ref.childByAutoId().key
+        let addClass = ["classes/\(key)" : classGroup]
+        ref.updateChildValues(addClass)
+        print("added new class")
+        
         }
-        
     }
     
     

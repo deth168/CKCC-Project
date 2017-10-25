@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 
@@ -21,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         return true
+    }
+    
+    func logUser(){
+        if Auth.auth().currentUser != nil {
+            
+            let tabBar = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            self.window?.rootViewController = tabBar
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -89,7 +99,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
-   
 }
 

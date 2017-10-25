@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0491B6F91F8A5D3F0038FF87 /* NoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */; };
-		049A46221F92878D00FC7A70 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A46211F92878D00FC7A70 /* ClassViewController.swift */; };
+		040D9C901F987EC400778DD4 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D9C8F1F987EC400778DD4 /* ActionView.swift */; };
+		0444DBAA1F9F6D6C00D51AA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444DBA91F9F6D6C00D51AA7 /* Constants.swift */; };
+		0445C1191F9606E2001E2361 /* AccountTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445C1181F9606E2001E2361 /* AccountTypeViewController.swift */; };
+		044790AD1FA09BE500766F49 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044790AC1FA09BE500766F49 /* SettingsTableViewCell.swift */; };
+		044C89EC1F9F62E40009DC36 /* ClassChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C89EB1F9F62E40009DC36 /* ClassChatViewController.swift */; };
+		0457F7B01F9F145E00C6829C /* CustomizeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457F7AF1F9F145E00C6829C /* CustomizeUIView.swift */; };
+		047C83601F976EE700440DB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C835F1F976EE700440DB5 /* User.swift */; };
+		047C836C1F977A0C00440DB5 /* AuthenicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C836B1F977A0C00440DB5 /* AuthenicationService.swift */; };
+		047E4C651FA0616700FA7D35 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E4C641FA0616700FA7D35 /* SettingsViewController.swift */; };
+		047E72611F9DA629004B9E2A /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E72601F9DA629004B9E2A /* ClassTableViewCell.swift */; };
+		04926C011FA04EEE00318B58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04926C001FA04EEE00318B58 /* SearchViewController.swift */; };
 		049A46241F928B1000FC7A70 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */; };
 		049EF0F61F8FDB36001660C5 /* CKCC-Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 049EF0F41F8FDB36001660C5 /* CKCC-Project.xcdatamodeld */; };
+		04CA68231F9CEBB800FCBBD7 /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA68221F9CEBB800FCBBD7 /* ClassesViewController.swift */; };
 		04D0BF421F93B66800F1567F /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0BF411F93B66700F1567F /* CreateClassViewController.swift */; };
-		04DC043F1F88C31400CED28B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC043E1F88C31400CED28B /* HomeViewController.swift */; };
 		0A1249E418D65DCF7F97229D /* Pods_MyClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BBBEEDF8D3EE25545735D /* Pods_MyClass.framework */; };
 		3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */; };
 		4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */; };
@@ -24,13 +33,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClassViewController.swift; sourceTree = "<group>"; };
-		049A46211F92878D00FC7A70 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		040D9C8F1F987EC400778DD4 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		0444DBA71F9F692D00D51AA7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0444DBA91F9F6D6C00D51AA7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0445C1181F9606E2001E2361 /* AccountTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTypeViewController.swift; sourceTree = "<group>"; };
+		044790AC1FA09BE500766F49 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		044C89EB1F9F62E40009DC36 /* ClassChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassChatViewController.swift; sourceTree = "<group>"; };
+		0457F7AF1F9F145E00C6829C /* CustomizeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeUIView.swift; sourceTree = "<group>"; };
+		047C835F1F976EE700440DB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		047C836B1F977A0C00440DB5 /* AuthenicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenicationService.swift; sourceTree = "<group>"; };
+		047E4C641FA0616700FA7D35 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		047E72601F9DA629004B9E2A /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		04926C001FA04EEE00318B58 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		049EF0F51F8FDB36001660C5 /* CKCC-Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CKCC-Project.xcdatamodel"; sourceTree = "<group>"; };
-		049EF0F71F8FDC2D001660C5 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colors.swift; path = ../../../../Downloads/colors.swift; sourceTree = "<group>"; };
+		04CA68221F9CEBB800FCBBD7 /* ClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
 		04D0BF411F93B66700F1567F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
-		04DC043E1F88C31400CED28B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4C5C84201F6BBB6B003BCBF8 /* MyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,11 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0444DBA81F9F6D5300D51AA7 /* Authenications */ = {
+			isa = PBXGroup;
+			children = (
+				047C836B1F977A0C00440DB5 /* AuthenicationService.swift */,
+				047C835F1F976EE700440DB5 /* User.swift */,
+			);
+			path = Authenications;
+			sourceTree = "<group>";
+		};
+		0457F7B11F9F14C200C6829C /* CustomizeUI */ = {
+			isa = PBXGroup;
+			children = (
+				0457F7AF1F9F145E00C6829C /* CustomizeUIView.swift */,
+			);
+			path = CustomizeUI;
+			sourceTree = "<group>";
+		};
 		048718D11F88B27000FE1223 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				049EF0F71F8FDC2D001660C5 /* colors.swift */,
+				0457F7B11F9F14C200C6829C /* CustomizeUI */,
+				0444DBA81F9F6D5300D51AA7 /* Authenications */,
+				040D9C8F1F987EC400778DD4 /* ActionView.swift */,
 				049EF0F41F8FDB36001660C5 /* CKCC-Project.xcdatamodeld */,
+				0444DBA91F9F6D6C00D51AA7 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,15 +117,28 @@
 		048718D41F88B28900FE1223 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CACFD261F6BBE7E0081062A /* LoginViewController.swift */,
-				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
-				04DC043E1F88C31400CED28B /* HomeViewController.swift */,
-				0491B6F81F8A5D3E0038FF87 /* NoClassViewController.swift */,
-				049A46211F92878D00FC7A70 /* ClassViewController.swift */,
-				049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */,
+				4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */,
+				04CA681F1F9CE5AE00FCBBD7 /* Authenication Controllers */,
 				04D0BF411F93B66700F1567F /* CreateClassViewController.swift */,
+				04CA68221F9CEBB800FCBBD7 /* ClassesViewController.swift */,
+				047E72601F9DA629004B9E2A /* ClassTableViewCell.swift */,
+				044C89EB1F9F62E40009DC36 /* ClassChatViewController.swift */,
+				04926C001FA04EEE00318B58 /* SearchViewController.swift */,
+				047E4C641FA0616700FA7D35 /* SettingsViewController.swift */,
+				044790AC1FA09BE500766F49 /* SettingsTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		04CA681F1F9CE5AE00FCBBD7 /* Authenication Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CACFD261F6BBE7E0081062A /* LoginViewController.swift */,
+				3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */,
+				049A46231F928B1000FC7A70 /* SignUpNameViewController.swift */,
+				0445C1181F9606E2001E2361 /* AccountTypeViewController.swift */,
+			);
+			path = "Authenication Controllers";
 			sourceTree = "<group>";
 		};
 		2E137073281C71DEC0B42B54 /* Pods */ = {
@@ -102,6 +153,8 @@
 		4C5C84171F6BBB6B003BCBF8 = {
 			isa = PBXGroup;
 			children = (
+				0444DBA71F9F692D00D51AA7 /* Bridging-Header.h */,
+				4CACFD241F6BBD220081062A /* GoogleService-Info.plist */,
 				4C5C84221F6BBB6B003BCBF8 /* MyClass */,
 				4C5C84211F6BBB6B003BCBF8 /* Products */,
 				2E137073281C71DEC0B42B54 /* Pods */,
@@ -123,8 +176,6 @@
 				048718D11F88B27000FE1223 /* Model */,
 				048718D21F88B27800FE1223 /* View */,
 				048718D41F88B28900FE1223 /* Controller */,
-				4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */,
-				4CACFD241F6BBD220081062A /* GoogleService-Info.plist */,
 				4C5C842F1F6BBB6B003BCBF8 /* Info.plist */,
 			);
 			path = MyClass;
@@ -236,6 +287,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyClass/Pods-MyClass-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -243,6 +296,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -276,15 +331,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049A46221F92878D00FC7A70 /* ClassViewController.swift in Sources */,
 				3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */,
+				040D9C901F987EC400778DD4 /* ActionView.swift in Sources */,
+				044790AD1FA09BE500766F49 /* SettingsTableViewCell.swift in Sources */,
 				049EF0F61F8FDB36001660C5 /* CKCC-Project.xcdatamodeld in Sources */,
-				0491B6F91F8A5D3F0038FF87 /* NoClassViewController.swift in Sources */,
+				04926C011FA04EEE00318B58 /* SearchViewController.swift in Sources */,
+				0445C1191F9606E2001E2361 /* AccountTypeViewController.swift in Sources */,
 				4CACFD271F6BBE7E0081062A /* LoginViewController.swift in Sources */,
 				4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */,
-				04DC043F1F88C31400CED28B /* HomeViewController.swift in Sources */,
+				0457F7B01F9F145E00C6829C /* CustomizeUIView.swift in Sources */,
+				0444DBAA1F9F6D6C00D51AA7 /* Constants.swift in Sources */,
+				04CA68231F9CEBB800FCBBD7 /* ClassesViewController.swift in Sources */,
+				044C89EC1F9F62E40009DC36 /* ClassChatViewController.swift in Sources */,
 				049A46241F928B1000FC7A70 /* SignUpNameViewController.swift in Sources */,
+				047E72611F9DA629004B9E2A /* ClassTableViewCell.swift in Sources */,
+				047C83601F976EE700440DB5 /* User.swift in Sources */,
+				047C836C1F977A0C00440DB5 /* AuthenicationService.swift in Sources */,
 				04D0BF421F93B66800F1567F /* CreateClassViewController.swift in Sources */,
+				047E4C651FA0616700FA7D35 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radeth.myCKCCApp.MyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -436,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.radeth.myCKCCApp.MyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
