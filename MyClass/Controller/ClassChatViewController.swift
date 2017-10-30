@@ -103,9 +103,9 @@ class ClassChatViewController: JSQMessagesViewController {
         
         let message = [
             "sender_id": senderId,
-            "name": Constants.refs.databaseChats,
+            "name": senderDisplayName,
             "text": text
-            ] as [String : Any]
+            ]
         
         ref.setValue(message)
         finishSendingMessage()

@@ -38,9 +38,9 @@ class SignUpViewController: UIViewController {
         let passwordConfirm = passwordConfirmTextField.text
         let alertController = AlertView()
         
-        if password != passwordConfirm || (password?.count)! < 6 {
-            alertController.alertView(title: "Sign up fail!", message: "Password does't match or must be more than 5 chars.", actionTitle: "Ok")
-        }
+//        if password != passwordConfirm || (password?.count)! < 6 {
+//            alertController.alertView(title: "Sign up fail!", message: "Password does't match or must be more than 5 chars.", actionTitle: "Ok")
+//        }
         
         authService.signUp(email: email, firstName: firstName, lastName: lastName, password: password)
        }

@@ -30,18 +30,6 @@ class ClassesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "classes") as! ClassTableViewCell
         
-        //if (cell == nil) {
-            //cell = UITableViewCell(style: UITableViewCellStyle.value1,reuseIdentifier: "classes")
-        //}
-//        if indexPath.row < 7 {
-//            cell?.detailTextLabel?.text = "Mr Disney"
-//        } else {
-//            cell?.detailTextLabel?.text = "Mr Tolkien"
-//        }
-        //let image = UIImage(named: "ic_group")
-        //let highlightedImage = UIImage(named: "ic_settings")
-        //cell.imageView?.highlightedImage = highlightedImage
-        //cell?.textLabel?.text = dwarves[indexPath.row]
         let image = UIImage(named: "img_placehold")
         
         cell.classImageView.image = image

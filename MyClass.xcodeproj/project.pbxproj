@@ -24,6 +24,7 @@
 		04D0BF421F93B66800F1567F /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0BF411F93B66700F1567F /* CreateClassViewController.swift */; };
 		0A1249E418D65DCF7F97229D /* Pods_MyClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BBBEEDF8D3EE25545735D /* Pods_MyClass.framework */; };
 		3F4CCBC11F8516F300E471D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */; };
+		3FAE98981FA743C3000C6F83 /* GMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE98971FA743C3000C6F83 /* GMapsViewController.swift */; };
 		4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */; };
 		4C5C842B1F6BBB6B003BCBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */; };
 		4C5C842E1F6BBB6B003BCBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C842C1F6BBB6B003BCBF8 /* LaunchScreen.storyboard */; };
@@ -50,6 +51,7 @@
 		04CA68221F9CEBB800FCBBD7 /* ClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
 		04D0BF411F93B66700F1567F /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		3F4CCBC01F8516F300E471D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3FAE98971FA743C3000C6F83 /* GMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapsViewController.swift; sourceTree = "<group>"; };
 		4C5C84201F6BBB6B003BCBF8 /* MyClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5C842A1F6BBB6B003BCBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		048718D41F88B28900FE1223 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FAE98971FA743C3000C6F83 /* GMapsViewController.swift */,
 				4C5C84231F6BBB6B003BCBF8 /* AppDelegate.swift */,
 				04CA681F1F9CE5AE00FCBBD7 /* Authenication Controllers */,
 				04D0BF411F93B66700F1567F /* CreateClassViewController.swift */,
@@ -269,9 +272,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyClass/Pods-MyClass-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,6 +347,7 @@
 				4C5C84241F6BBB6B003BCBF8 /* AppDelegate.swift in Sources */,
 				0457F7B01F9F145E00C6829C /* CustomizeUIView.swift in Sources */,
 				0444DBAA1F9F6D6C00D51AA7 /* Constants.swift in Sources */,
+				3FAE98981FA743C3000C6F83 /* GMapsViewController.swift in Sources */,
 				04CA68231F9CEBB800FCBBD7 /* ClassesViewController.swift in Sources */,
 				044C89EC1F9F62E40009DC36 /* ClassChatViewController.swift in Sources */,
 				049A46241F928B1000FC7A70 /* SignUpNameViewController.swift in Sources */,
@@ -482,11 +489,12 @@
 				INFOPLIST_FILE = MyClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.radeth.myCKCCApp.MyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -499,11 +507,12 @@
 				INFOPLIST_FILE = MyClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.radeth.myCKCCApp.MyClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

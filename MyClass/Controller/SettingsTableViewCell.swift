@@ -9,6 +9,10 @@
 import UIKit
 
 class SettingsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var profileLabel: UILabel!
+    @IBOutlet weak var firstnameLastname: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +24,6 @@ class SettingsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }

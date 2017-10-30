@@ -8,20 +8,34 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var ref = Database.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell_settings") as! SettingsTableViewCell
+        let image = UIImage(named: "ic_user_default")
+        
+        cell.profileImage.image = image
+        cell.profileLabel.text = "Profile"
+        cell.firstnameLastname.text = Auth.auth().currentUser?.uid
+        
+        
+        return cell
+    }
+
     @IBAction func onSignOutButtonPressed(_ sender: Any) {
         
         if Auth.auth().currentUser != nil {
@@ -38,7 +52,10 @@ class SettingsViewController: UIViewController {
             }
         }
     }
-    }
+    
+    
+    
+}
     
 
 
