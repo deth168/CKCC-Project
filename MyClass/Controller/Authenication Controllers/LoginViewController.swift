@@ -19,7 +19,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.view.backgroundColor = UIColor(red: 0.00, green: 0.57, blue: 0.92, alpha: 1.0)
         view.tintColor = UIColor(red: 0.00, green: 0.39, blue: 0.72, alpha: 1.0)
     }
     
@@ -37,7 +36,6 @@ class LoginViewController: UIViewController {
         let password = passwordTextField.text
         
         if email == "" || password == "" {
-            
             let alert = UIAlertController(title: "Sign in failed!", message: "Please fill in email or password.", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default, handler: nil)
             

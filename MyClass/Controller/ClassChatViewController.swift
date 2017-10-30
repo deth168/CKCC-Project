@@ -14,6 +14,10 @@ import FirebaseDatabase
 class ClassChatViewController: JSQMessagesViewController {
 
     var messages = [JSQMessage]()
+    var array = [String]()
+    
+    var ref : DatabaseReference!
+    var handle : DatabaseHandle!
     
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
@@ -23,13 +27,15 @@ class ClassChatViewController: JSQMessagesViewController {
         return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     }()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        senderId = "1234"
-        senderDisplayName = "..."
+        senderId = Auth.auth().currentUser?.uid
+        senderDisplayName = "ASDD"
+        showDisplayNameDialog()
         
-        inputToolbar.contentView.leftBarButtonItem = nil
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
         
@@ -49,6 +55,13 @@ class ClassChatViewController: JSQMessagesViewController {
             }
         })
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //hide tab bar controller
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     //return an item from messages
@@ -85,11 +98,36 @@ class ClassChatViewController: JSQMessagesViewController {
     //when user pressed send button
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         
+        //write data to firebase
         let ref = Constants.refs.databaseChats.childByAutoId()
-        let message = ["sender_id": senderId, "name": senderDisplayName, "text": text]
+        
+        let message = [
+            "sender_id": senderId,
+            "name": Constants.refs.databaseChats,
+            "text": text
+            ] as [String : Any]
         
         ref.setValue(message)
         finishSendingMessage()
     }
+    
+    
+    //Setting A User’s Display Name With A Dialog
+    @objc func showDisplayNameDialog()
+    {
+        let defaults = UserDefaults.standard
+        let ref = Database.database().reference()
+        
+        ref.observeSingleEvent(of: .value, with: { snapshot in
+            let name = snapshot.value as? String
+            self.senderDisplayName = name
+        })
+        
+        self.title = "Chat: \(self.senderDisplayName)"
+        defaults.synchronize()
+    
+    }
+    
+
 
 }

@@ -156,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D3M-eP-d5m">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="classes" rowHeight="90" id="qM6-nL-9TY" userLabel="settings" customClass="SettingsTableViewCell" customModule="MyClass" customModuleProvider="target">
@@ -727,7 +727,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EA9-ap-e6o">
-                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="classes" rowHeight="90" id="auT-4m-mzR" customClass="ClassTableViewCell" customModule="MyClass" customModuleProvider="target">
@@ -785,7 +785,7 @@
                                             <outlet property="classNameLabel" destination="eCk-JS-6zJ" id="46v-qh-eKG"/>
                                             <outlet property="lastPostLabel" destination="udW-x9-H28" id="gpN-pm-O1P"/>
                                             <outlet property="timeStampLabel" destination="udb-Fh-XgN" id="9nM-VZ-gqS"/>
-                                            <segue destination="mDe-16-mYG" kind="show" id="LCz-0p-ymF"/>
+                                            <segue destination="mDe-16-mYG" kind="show" id="hU5-77-sLn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -871,7 +871,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUx-TE-DfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4174" y="2"/>
+            <point key="canvasLocation" x="3962" y="41"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NhT-u0-Nky">
@@ -902,7 +902,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4S-ay-q5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4762" y="1"/>
+            <point key="canvasLocation" x="4775" y="1"/>
         </scene>
         <!--Settings-->
         <scene sceneID="yjB-Gh-L4E">

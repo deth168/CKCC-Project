@@ -23,6 +23,7 @@ struct AuthenicationService {
                 
                 let user : [String : AnyObject] = [
                     "email"     : email as AnyObject,
+                    "uID"       : user?.uid as AnyObject,
                     "firstname" : firstName as AnyObject,
                     "lastname"  : lastName as AnyObject,
                     ]

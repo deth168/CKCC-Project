@@ -9,16 +9,6 @@
 import UIKit
 
 class ClassesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    
-    
-    private let dwarves = [
-        "Sleepy", "Sneezy", "Bashful", "Happy",
-        "Doc", "Grumpy", "Dopey",
-        "Thorin", "Dorin", "Nori", "Ori",
-        "Balin", "Dwalin", "Fili", "Kili",
-        "Oin", "Gloin", "Bifur", "Bofur",
-        "Bombur"
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +17,9 @@ class ClassesViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
