@@ -27,11 +27,26 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_settings") as! SettingsTableViewCell
         let image = UIImage(named: "ic_user_default")
+        let ref = Database.database().reference()
+        let userID = Auth.auth().currentUser?.uid
         
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let firstname = value?["firstname"] as? String ?? ""
+            let lastname = value?["lastname"] as? String ?? ""
+           // let user = User.init(snapshot: firstname)
+            
+            cell.firstnameLastname.text = "\(lastname)"
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         cell.profileImage.image = image
         cell.profileLabel.text = "Profile"
-        cell.firstnameLastname.text = Auth.auth().currentUser?.uid
-        
+        //cell.firstnameLastname.text = "Deth"
+
         
         return cell
     }
