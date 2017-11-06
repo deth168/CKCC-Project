@@ -22,6 +22,29 @@ class GMapsViewController: UIViewController {
         gMapsView.animate(to: ckccCameraPosition)
         
         
+        //add current user marker
+        let lastKnownLocation = getLastKnownLocation()
+        if lastKnownLocation != nil {
+            let marker = GMSMarker()
+            marker.position = lastKnownLocation!.coordinate
+            marker.title = "You're here!"
+            marker.map = gMapsView
+        } else {
+            print("can't get user location!")
+        }
+        
+        
+        // request location update
+        
+        
+    }
+    
+    func getLastKnownLocation() -> CLLocation?{
+        let locationManager = CLLocationManager()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+
+        return locationManager.location
     }
     
 }
